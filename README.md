@@ -25,19 +25,19 @@
 #### npm
 
 ```
-npm init @xmufaro/create-discordjs-bot@latest
+npm init @xmufaro/discordjs-bot@latest
 ```
 
 #### yarn
 
 ```
-yarn create @xmufaro/create-discordjs-bot
+yarn create @xmufaro/discordjs-bot
 ```
 
 #### pnpm
 
 ```
-pnpm create @xmufaro/create-discordjs-bot
+pnpm create @xmufaro/discordjs-bot
 ```
 
 ## Running the bot

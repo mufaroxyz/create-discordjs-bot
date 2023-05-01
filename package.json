@@ -1,65 +1,65 @@
 {
-    "name": "@xmufaro/create-discordjs-bot",
-    "version": "0.1.1",
-    "description": "A CLI Tool to create a Discord.js Bot basing on Mufaro's Typescript Handler",
-    "main": "dist/index.js",
-    "bin": "dist/index.js",
-    "type": "module",
-    "private": false,
-    "scripts": {
-        "start": "node --enable-source-maps .",
-        "test": "vitest run",
-        "test:watch": "vitest",
-        "pretty": "prettier -w .",
-        "build": "rimraf dist && tsc",
-        "lint": "eslint --fix src/**/*.ts",
-        "clean": "node dist/scripts/clean.js",
-        "dev": "pnpm build --inlineSourceMap && pnpm clean && pnpm start",
-        "check-templates": "cd templates/TypeScript && pnpm i --silent && pnpm build",
-        "release": "pnpm build && changeset publish"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/xMufaro/create-discordjs-bot.git"
-    },
-    "keywords": [
-        "discord.js",
-        "djs",
-        "mufaro",
-        "typescript",
-        "handler"
-    ],
-    "author": "Mufaro",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/xMufaro/create-discordjs-bot/issues"
-    },
-    "homepage": "https://github.com/xMufaro/create-discordjs-bot#readme",
-    "dependencies": {
-        "chalk": "^5.2.0",
-        "figlet": "^1.5.2",
-        "inquirer": "^9.1.5",
-        "nanospinner": "^1.1.0",
-        "validate-npm-package-name": "^5.0.0"
-    },
-    "devDependencies": {
-        "@changesets/cli": "^2.26.1",
-        "@types/figlet": "^1.5.5",
-        "@types/inquirer": "^9.0.3",
-        "@types/validate-npm-package-name": "^4.0.0",
-        "@typescript-eslint/eslint-plugin": "^5.57.1",
-        "@typescript-eslint/parser": "^5.57.1",
-        "eslint": "^8.37.0",
-        "prettier": "^2.8.7",
-        "rimraf": "^4.4.1",
-        "typescript": "^5.0.3",
-        "vitest": "^0.29.8"
-    },
-    "prettier": {
-        "semi": true,
-        "trailingComma": "all",
-        "singleQuote": true,
-        "printWidth": 100,
-        "tabWidth": 4
-    }
+  "name": "@xmufaro/create-discordjs-bot",
+  "version": "0.1.1",
+  "description": "A CLI Tool to create a Discord.js Bot basing on Mufaro's Typescript Handler",
+  "main": "dist/index.js",
+  "bin": "dist/index.js",
+  "type": "module",
+  "private": false,
+  "scripts": {
+    "start": "node --enable-source-maps .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "pretty": "prettier -w .",
+    "build": "rimraf dist && tsc",
+    "lint": "eslint --fix src/**/*.ts",
+    "clean": "node dist/scripts/clean.js",
+    "dev": "pnpm build --inlineSourceMap && pnpm clean && pnpm start",
+    "check-templates": "cd templates/TypeScript && pnpm i --silent && pnpm build",
+    "release": "pnpm build && changeset publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xMufaro/create-discordjs-bot.git"
+  },
+  "keywords": [
+    "discord.js",
+    "djs",
+    "mufaro",
+    "typescript",
+    "handler"
+  ],
+  "author": "Mufaro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xMufaro/create-discordjs-bot/issues"
+  },
+  "homepage": "https://github.com/xMufaro/create-discordjs-bot#readme",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "figlet": "^1.5.2",
+    "inquirer": "^9.1.5",
+    "nanospinner": "^1.1.0",
+    "validate-npm-package-name": "^5.0.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.26.1",
+    "@types/figlet": "^1.5.5",
+    "@types/inquirer": "^9.0.3",
+    "@types/validate-npm-package-name": "^4.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
+    "typescript": "^5.0.3",
+    "vitest": "^0.29.8"
+  },
+  "prettier": {
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true,
+    "printWidth": 100,
+    "tabWidth": 4
+  }
 }
