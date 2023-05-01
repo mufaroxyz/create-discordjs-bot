@@ -1,6 +1,6 @@
 {
   "name": "@xmufaro/create-discordjs-bot",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A CLI Tool to create a Discord.js Bot basing on Mufaro's Typescript Handler",
   "main": "dist/index.js",
   "bin": "dist/index.js",
