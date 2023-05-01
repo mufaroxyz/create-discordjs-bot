@@ -7,7 +7,7 @@
         src="https://img.shields.io/npm/v/@xmufaro/create-discordjs-bot.svg?maxAge=3600"
         alt="NPM version"
     /></a>
-    <a href="https://www.npmjs.com/package/@a7mooz/create-discordjs-bot"
+    <a href="https://www.npmjs.com/package/@xmufaro/create-discordjs-bot"
       ><img
         src="https://img.shields.io/npm/dt/@xmufaro/create-discordjs-bot.svg?maxAge=3600"
         alt="NPM downloads"
