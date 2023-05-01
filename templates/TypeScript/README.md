@@ -5,19 +5,23 @@ git clone https://github.com/xMufaro/discordjs-typescript-handler discord-bot
 cd discord-bot
 pnpm install
 ```
+Or use the [CLI](https://github.com/xmufaro/create-discordjs-bot)
+```
+npx @xmufaro/create-discordjs-bot
+```
 
 ### Configure
 `.env`
 ```toml
-clientToken=Your-Bot-Token
+clientToken= Your Discord Bot Token
 ```
 `config.json`
-```json
+```jsonc
 {
-    "guildId": "Your Guild ID (OPTIONAL, only needed for guild specific slash commands)",
+    "guildId": "", // Your Guild ID (OPTIONAL, only needed for guild specific slash commands)
     "prefix": "!",
     "features": {
-        ".": "Decide which features you want to use"  
+        //... Decide which features you want to use      
     }
 }
 
@@ -45,13 +49,13 @@ pnpm start # Production
 ## Slash Commands
 ```ts
 import { Command } from '@handlers';
-import { ApplicationCommandOptionType, ApplicationCommandType, ButtonStyle, ButtonBuilder } from 'discord.js';
 import { ButtonActionRowBuilder } from "@structures/ActionRowBuilder"
+import { ApplicationCommandOptionType, ApplicationCommandType, ButtonBuilder, ButtonStyle } from 'discord.js';
 
 export default new Command({
     name: 'example',
     description: 'Test command',
-    type: ApplicationCommandType.ChatInput, // You can also use User and Message for context menus
+    type: ApplicationCommandType.ChatInput // You can also use User and Message for context menus
     options: [
         {
             name: 'example',
@@ -59,7 +63,7 @@ export default new Command({
             type: ApplicationCommandOptionType.String,
             required: true,
         },
-    ],
+    ]
     run: async ({ interaction, args, client }) => {
         const example = args.getString('example');
         const buttons = new ButtonActionRowBuillder().addComponents([

@@ -42,10 +42,9 @@ pnpm create @xmufaro/discordjs-bot
 
 ## Running the bot
 
-
-1.   `cd your-project-name`
-2.   Fill out the `.env` file with your bot token and configure config.json file
-3.   Start Your Project:
+1.  `cd your-project-name`
+2.  Fill out the `.env` file with your bot token and configure config.json file
+3.  Start Your Project:
 
 ##### npm
 
