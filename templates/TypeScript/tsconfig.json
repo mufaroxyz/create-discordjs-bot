@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "commonjs",
+        "lib": ["esnext"],
+        "strict": false,
+        "esModuleInterop": true,
+        "resolveJsonModule": true,
+        "outDir": "./build",
+        "sourceMap": true,
+        "incremental": true
+    },
+    "exclude": ["build", "node_modules", "tests", "**/*.spec.ts"],
+    "include": ["./src/**/*.ts"]
+}
