@@ -1,5 +1,11 @@
 # @xmufaro/create-discordjs-bot
 
+## 0.1.4
+
+### Patch Changes
+
+-   a94b752: Updated to the latest handler and fixed git merge conflicts
+
 ## 0.1.3
 
 ### Patch Changes
